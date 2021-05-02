@@ -1,0 +1,50 @@
+#paginaInicio {
+    display: none;
+}
+
+#seguridad {
+    height: 100vh;
+    width: 100%;
+    background-color: #93450B;
+    h2 {
+        text-align: center;
+        font-size: 50px;
+        padding: 100px;
+        color: #000;
+    }
+    .botones {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        button {
+            margin: 50px;
+            padding: 50px;
+            font-size: 30px;
+            border-radius: 50px;
+            border-color: #000;
+            background-color: #000;
+            color: #93450B;
+        }
+        button:hover {
+            border-color: #000;
+            background-color: #93450B;
+            color: #000;
+        }
+    }
+}
+
+#noMayor {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #93450B;
+    h2 {
+        text-align: center;
+        font-size: 50px;
+        padding: 100px;
+        color: #000;
+    }
+}

@@ -1,0 +1,30 @@
+.navbar-brand {
+    img {
+        width: 120px;
+        height: 100px;
+    }
+}
+
+.nav-link {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    color: #93450B !important;;
+}
+
+.shopping_cart {
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    color: #93450B;
+    button {
+        border: none;
+        background-color: #000;
+        color: #93450B;
+    }
+}
+
+.navbar {
+    background-color: #000 !important;
+}

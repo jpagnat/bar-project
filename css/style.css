@@ -1,0 +1,329 @@
+.navbar-brand img {
+  width: 120px;
+  height: 100px; }
+
+.nav-link {
+  margin-right: 25px;
+  margin-left: 25px;
+  font-size: 25px;
+  color: #93450B !important; }
+
+.shopping_cart {
+  text-decoration: none;
+  margin-right: 25px;
+  margin-left: 25px;
+  font-size: 25px;
+  color: #93450B; }
+  .shopping_cart button {
+    border: none;
+    background-color: #000;
+    color: #93450B; }
+
+.navbar {
+  background-color: #000 !important; }
+
+.portada {
+  background-image: url(../multimedia/portada1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 630px;
+  position: relative; }
+  .portada .portada_titulo {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-color: #B6B1A8;
+    opacity: 0.8;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .portada .portada_titulo p {
+      font-family: 'Poppins', sans-serif;
+      padding-top: 20px;
+      font-size: 30px;
+      letter-spacing: 4px; }
+    .portada .portada_titulo h1 {
+      color: #93450B;
+      letter-spacing: 2px;
+      font-size: 100px; }
+
+.portada:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #93450B; }
+  .about .about_description {
+    width: 600px;
+    margin: 0 40px 0 40px;
+    align-self: center; }
+    .about .about_description h2 {
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 40px; }
+    .about .about_description p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px; }
+      .about .about_description p span {
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        border-bottom: 1px solid #000; }
+  .about .about_img {
+    display: grid;
+    grid-template-areas: "uno dos" "uno dos" "uno tres" "uno tres";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 150px); }
+    .about .about_img div {
+      border-radius: 5px;
+      -webkit-box-shadow: 10px 13px 30px 2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 13px 30px 2px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 13px 30px 2px rgba(0, 0, 0, 0.75); }
+    .about .about_img .about_img_1 {
+      grid-area: uno;
+      width: 300px;
+      height: 600px;
+      background-image: url(../multimedia/about/img1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+      margin-top: 5px; }
+    .about .about_img .about_img_2 {
+      grid-area: dos;
+      width: 300px;
+      height: 300px;
+      background-image: url(../multimedia/about/img2.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .about .about_img .about_img_3 {
+      grid-area: 3;
+      width: 300px;
+      height: 300px;
+      background-image: url(../multimedia/about/img3.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 10px; }
+
+.tienda {
+  background-color: #000;
+  color: #93450B; }
+  .tienda .tienda_titulo {
+    text-align: center;
+    padding-top: 40px; }
+    .tienda .tienda_titulo h2 {
+      font-size: 80px; }
+    .tienda .tienda_titulo p {
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif; }
+  .tienda .tienda_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .tienda .tienda_box .tienda_box_item {
+      width: 350px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      margin-top: 50px; }
+      .tienda .tienda_box .tienda_box_item img {
+        height: 320px;
+        width: 200px; }
+      .tienda .tienda_box .tienda_box_item button {
+        font-size: 20px;
+        padding: 8px;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #000;
+        border-color: #93450B;
+        color: #93450B; }
+      .tienda .tienda_box .tienda_box_item button:hover {
+        background-color: #93450B;
+        border-color: #000;
+        color: #000; }
+      .tienda .tienda_box .tienda_box_item h3 {
+        font-size: 30px; }
+      .tienda .tienda_box .tienda_box_item p {
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif; }
+
+.reservas {
+  background-color: #93450B;
+  height: 600px; }
+  .reservas .reservas_titulo {
+    text-align: center;
+    padding-top: 40px; }
+    .reservas .reservas_titulo h2 {
+      font-size: 50px; }
+  .reservas .reservas_form {
+    border: 2px solid #000;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 13px 30px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 30px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 30px 2px rgba(0, 0, 0, 0.75);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    color: #93450B; }
+    .reservas .reservas_form h3 {
+      font-size: 40px;
+      text-align: center;
+      margin-top: 40px; }
+    .reservas .reservas_form form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 20px; }
+      .reservas .reservas_form form div {
+        margin: 5px;
+        padding: 10px; }
+        .reservas .reservas_form form div label {
+          font-size: 20px; }
+        .reservas .reservas_form form div input {
+          font-size: 20px;
+          margin-left: 5px; }
+      .reservas .reservas_form form .form_date {
+        text-align: center; }
+      .reservas .reservas_form form .form_button {
+        text-align: center; }
+        .reservas .reservas_form form .form_button button {
+          font-size: 20px;
+          border-radius: 20px;
+          padding: 10px;
+          background-color: #93450B;
+          border-color: #000; }
+        .reservas .reservas_form form .form_button button:hover {
+          background-color: #000;
+          border-color: #93450B;
+          color: #93450B; }
+
+footer {
+  height: 300px;
+  background-color: #000;
+  color: #93450B;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  footer .footer_logo img {
+    width: 300px;
+    height: 300px; }
+  footer .footer_redes {
+    margin-right: 50px; }
+    footer .footer_redes a {
+      text-decoration: none;
+      margin-right: 10px;
+      font-size: 40px;
+      color: #93450B; }
+  footer .footer_contacto {
+    margin-left: 50px; }
+    footer .footer_contacto h2 {
+      font-size: 30px; }
+    footer .footer_contacto p {
+      font-size: 20px; }
+
+#paginaInicio {
+  display: none; }
+
+#seguridad {
+  height: 100vh;
+  width: 100%;
+  background-color: #93450B; }
+  #seguridad h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 100px;
+    color: #000; }
+  #seguridad .botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; }
+    #seguridad .botones button {
+      margin: 50px;
+      padding: 50px;
+      font-size: 30px;
+      border-radius: 50px;
+      border-color: #000;
+      background-color: #000;
+      color: #93450B; }
+    #seguridad .botones button:hover {
+      border-color: #000;
+      background-color: #93450B;
+      color: #000; }
+
+#noMayor {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: #93450B; }
+  #noMayor h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 100px;
+    color: #000; }
+
+#carrito {
+  width: 400px;
+  height: 100vh;
+  background-color: #93450B;
+  position: absolute;
+  position: fixed;
+  z-index: 100;
+  left: 940px;
+  display: none;
+  border-radius: 10px;
+  border: 2px solid #000; }
+  #carrito h2 {
+    margin-top: 100px;
+    margin-left: 20px;
+    text-decoration: underline; }
+  #carrito ul {
+    font-size: 30px; }
+  #carrito p {
+    font-size: 30px;
+    margin-left: 30px; }
+
+.botones-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .botones-carrito button {
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    color: #93450B;
+    background-color: #000;
+    border-color: #93450B;
+    border-radius: 20px; }
+  .botones-carrito button:hover {
+    color: #000;
+    background-color: #93450B;
+    border-color: #000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive; }

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Booitstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/8b15835689.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>NUR BIER</title>
+</head>
+
+<body>
+    <!--Contenedor Principal-->
+    <div id="paginaInicio">
+
+        <!--Navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-center collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link_portada">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link_about">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link_tienda">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link_reservas">Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopping_cart">
+                    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <!--Carrito-->
+        <div id="carrito">
+            <h2>Carrito</h2>
+            <div class="inCarrito">
+                <ul id="listaCarrito"></ul>
+            </div>
+            <p>Total: <span id="total"></span></p>
+            <div class="botones-carrito">
+                <button id="boton-comprar">Comprar</button>
+                <button id="boton-vaciar">Vaciar</button>
+            </div>
+        </div>
+
+        <!--Portada-->
+        <header class="portada" id="link_portada">
+            <div class="portada_titulo">
+                <p>BIENVENIDOS A</p>
+                <h1>NUR BIER</h1>
+            </div>
+        </header>
+
+        <!--About-->
+        <section class="about" id="link_about">
+            <div class="about_description">
+                <h2>Por amor a la cerveza</h2>
+                <p>La cerveza es arte, amor, oficio y pasión. Las técnicas de fermentación y los ingredientes varian de
+                    un
+                    estilo a otro. Hay tantos estilos como paises en el mundo. Desde <span>NUR BIER</span> queremos
+                    ofrecerte un lugar calido, donde puedas recorrer el mundo a través de una cerveza.</p>
+            </div>
+            <div class="about_img">
+                <div class="about_img_1">
+
+                </div>
+                <div class="about_img_2">
+
+                </div>
+                <div class="about_img_3">
+
+                </div>
+            </div>
+        </section>
+
+        <!--Tienda-->
+        <section class="tienda" id="link_tienda">
+            <div class="tienda_titulo">
+                <h2>Tienda</h2>
+                <p>Agrega los productos que desees al carrito</p>
+            </div>
+            <div class="tienda_box" id="items">
+                <div class="tienda_box_item">
+                    <img src="multimedia/tienda/golden.png" alt="">
+                    <h3>GOLDEN</h3>
+                    <p>$100</p>
+                    <button id="agregar-golden">Agregar</button>
+                </div>
+                <div class="tienda_box_item">
+                    <img src="multimedia/tienda/honey.png" alt="">
+                    <h3>HONEY</h3>
+                    <p>$100</p>
+                    <button id="agregar-honey">Agregar</button>
+                </div>
+                <div class="tienda_box_item">
+                    <img src="multimedia/tienda/ipa.png" alt="">
+                    <h3>IPA</h3>
+                    <p>$100</p>
+                    <button id="agregar-ipa">Agregar</button>
+                </div>
+                <div class="tienda_box_item">
+                    <img src="multimedia/tienda/red.png" alt="">
+                    <h3>RED IRISH</h3>
+                    <p>$100</p>
+                    <button id="agregar-redirish">Agregar</button>
+                </div>
+                <div class="tienda_box_item">
+                    <img src="multimedia/tienda/negra.png" alt="">
+                    <h3>NEGRA</h3>
+                    <p>$100</p>
+                    <button id="agregar-negra">Agregar</button>
+                </div>
+                <div class="tienda_box_item">
+                    <img src="multimedia/tienda/double.png" alt="">
+                    <h3>DOUBLE IPA</h3>
+                    <p>$100</p>
+                    <button id="agregar-dobleipa">Agregar</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Reservas-->
+        <section class="reservas" id="link_reservas">
+            <div class="reservas_titulo">
+                <h2>¿Venís al Bar?</h2>
+            </div>
+            <div class="reservas_form">
+                <h3>Reserva tu lugar:</h3>
+                <form action="">
+                    <div>
+                        <label for="">Nombre:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Apellido:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Personas:</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">Más de 10</option>
+                        </select>
+                    </div>
+                    <div class="form_date">
+                        <input type="date">
+                    </div>
+                    <div class="form_button">
+                        <button>Reservar</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer_contacto">
+                <h2>Contactanos:</h2>
+                <p>+54 11-6585-0999</p>
+                <p>nur.bier@gmail.com</p>
+            </div>
+            <div class="footer_logo">
+                <img src="multimedia/logo2.png" alt="">
+            </div>
+            <div class="footer_redes">
+                <h2>Seguinos:</h2>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!--Seguridad - Mayor de Edad-->
+    <div id="seguridad">
+        <h2>¿Sos mayor de 18 años?</h2>
+        <div class="botones">
+            <button id="btnSi">SI</button>
+            <button id="btnNo">NO</button>
+        </div>
+    </div>
+    <div id="noMayor">
+        <h2>Gracias, te esperamos cuando seas mayor!</h2>
+    </div>
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src="js/seguridad.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
