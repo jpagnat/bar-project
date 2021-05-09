@@ -216,6 +216,25 @@
           border-color: #93450B;
           color: #93450B; }
 
+#respuesta {
+  border: 2px solid #000;
+  position: absolute;
+  background-color: #93450B;
+  border-radius: 20px;
+  display: none;
+  width: 500px; }
+  #respuesta p {
+    color: #000; }
+  #respuesta button {
+    color: #93450B;
+    background-color: #000;
+    border-radius: 15px;
+    border: 2px solid #93450B;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto; }
+
 footer {
   height: 300px;
   background-color: #000;
