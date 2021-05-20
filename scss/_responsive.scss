@@ -31,4 +31,10 @@
     footer{
         justify-content: space-between;
     }
+    #seguridad {
+        height: 100%;
+        .botones {
+            margin-top: 0;
+        }
+    }
 }
