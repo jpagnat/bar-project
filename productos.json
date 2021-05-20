@@ -3,21 +3,21 @@
         "id": 1,
         "estilo": "GOLDEN",
         "precio": 100,
-        "img": "/multimedia/tienda/golden.png" 
+        "img": "multimedia/tienda/golden.png" 
     },
 
     {
         "id": 2,
         "estilo": "HONEY",
         "precio": 100,
-        "img": "/multimedia/tienda/honey.png" 
+        "img": "multimedia/tienda/honey.png" 
     },
 
     {
         "id": 3,
         "estilo": "IPA",
         "precio": 100,
-        "img": "/multimedia/tienda/ipa.png" 
+        "img": "multimedia/tienda/ipa.png" 
     },
 
 
@@ -25,7 +25,7 @@
         "id": 4,
         "estilo": "RED IRISH",
         "precio": 100,
-        "img": "/multimedia/tienda/red.png" 
+        "img": "multimedia/tienda/red.png" 
     },
 
 
@@ -33,7 +33,7 @@
         "id": 5,
         "estilo": "NEGRA",
         "precio": 100,
-        "img": "/multimedia/tienda/negra.png" 
+        "img": "multimedia/tienda/negra.png" 
     },
 
 
@@ -41,7 +41,7 @@
         "id": 6,
         "estilo": "DOUBLE IPA",
         "precio": 100,
-        "img": "/multimedia/tienda/double.png" 
+        "img": "multimedia/tienda/double.png" 
     }
 
 
