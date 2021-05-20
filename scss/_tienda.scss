@@ -15,10 +15,48 @@
             font-family: 'Poppins', sans-serif;
         }
     }
+}
 
+#cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    }
+    .box-item {
+        width: 350px;
+        height: 500px;
+        .card {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h5 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 30px;
+                }
+                button {
+                    font-size: 20px;
+                    background-color: #93450B;
+                }
+                button:hover {
+                    background-color: #000;
+                    border-color: #93450B;
+                }
+            }
+        }
+        
     img {
-        height: 320px;
+        height: 300px;
         width: 200px;
 
     }
-}
+    }

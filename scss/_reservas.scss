@@ -1,6 +1,6 @@
 .reservas {
     background-color: #93450B;
-    height: 600px;
+    height: 800px;
 
     .reservas_titulo {
         text-align: center;
@@ -70,24 +70,23 @@
     }
 }
 
-#respuesta {
-    border: 2px solid #000;
-    position: absolute;
+.flex-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.errorForm {
+    margin-left: 10px;
+    width: auto;
+    padding: 5px;
     background-color: #93450B;
-    border-radius: 20px;
+    color: #000;
+    border: 2px solid #000;
     display: none;
-    width: 500px;
-    p {
-        color: #000;
-    }
-    button {
-        color: #93450B;
-        background-color: #000;
-        border-radius: 15px;
-        border: 2px solid #93450B;
-        font-size: 15px;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    text-align: center;
+}
+
+#confirmacion-formulario {
+    display: none;
 }

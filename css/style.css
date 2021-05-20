@@ -22,6 +22,10 @@
 .navbar {
   background-color: #000 !important; }
 
+.btn-responsive {
+  color: #93450B !important;
+  background-color: #93450B; }
+
 .portada {
   background-image: url(../multimedia/portada1.jpg);
   background-repeat: no-repeat;
@@ -130,44 +134,43 @@
     .tienda .tienda_titulo p {
       font-size: 20px;
       font-family: 'Poppins', sans-serif; }
-  .tienda .tienda_box {
+
+#cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.box-item {
+  width: 350px;
+  height: 500px; }
+  .box-item .card {
+    background-color: #000;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    .tienda .tienda_box .tienda_box_item {
-      width: 350px;
-      height: 400px;
+    justify-content: center;
+    align-items: center; }
+    .box-item .card .card-body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-bottom: 50px;
-      margin-top: 50px; }
-      .tienda .tienda_box .tienda_box_item img {
-        height: 320px;
-        width: 200px; }
-      .tienda .tienda_box .tienda_box_item button {
-        font-size: 20px;
-        padding: 8px;
-        border-radius: 20px;
-        font-family: 'Poppins', sans-serif;
-        background-color: #000;
-        border-color: #93450B;
-        color: #93450B; }
-      .tienda .tienda_box .tienda_box_item button:hover {
-        background-color: #93450B;
-        border-color: #000;
-        color: #000; }
-      .tienda .tienda_box .tienda_box_item h3 {
+      align-items: center; }
+      .box-item .card .card-body h5 {
         font-size: 30px; }
-      .tienda .tienda_box .tienda_box_item p {
-        font-size: 25px;
-        font-family: 'Poppins', sans-serif; }
+      .box-item .card .card-body p {
+        font-size: 30px; }
+      .box-item .card .card-body button {
+        font-size: 20px;
+        background-color: #93450B; }
+      .box-item .card .card-body button:hover {
+        background-color: #000;
+        border-color: #93450B; }
+  .box-item img {
+    height: 300px;
+    width: 200px; }
 
 .reservas {
   background-color: #93450B;
-  height: 600px; }
+  height: 800px; }
   .reservas .reservas_titulo {
     text-align: center;
     padding-top: 40px; }
@@ -216,24 +219,23 @@
           border-color: #93450B;
           color: #93450B; }
 
-#respuesta {
-  border: 2px solid #000;
-  position: absolute;
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.errorForm {
+  margin-left: 10px;
+  width: auto;
+  padding: 5px;
   background-color: #93450B;
-  border-radius: 20px;
+  color: #000;
+  border: 2px solid #000;
   display: none;
-  width: 500px; }
-  #respuesta p {
-    color: #000; }
-  #respuesta button {
-    color: #93450B;
-    background-color: #000;
-    border-radius: 15px;
-    border: 2px solid #93450B;
-    font-size: 15px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto; }
+  text-align: center; }
+
+#confirmacion-formulario {
+  display: none; }
 
 footer {
   height: 300px;
@@ -305,45 +307,101 @@ footer {
     color: #000; }
 
 #carrito {
-  width: 400px;
-  height: 100vh;
   background-color: #93450B;
   position: absolute;
   position: fixed;
   z-index: 100;
-  left: 940px;
-  display: none;
-  border-radius: 10px;
-  border: 2px solid #000; }
-  #carrito h2 {
-    margin-top: 100px;
-    margin-left: 20px;
-    text-decoration: underline; }
-  #carrito ul {
-    font-size: 30px; }
-  #carrito p {
-    font-size: 30px;
-    margin-left: 30px; }
+  width: 500px;
+  height: auto;
+  margin-top: 70px; }
 
-#lista-carrito {
-  margin-top: 100px; }
-
-.botones-carrito {
+.flex-carrito {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .botones-carrito button {
-    padding: 10px;
-    font-size: 20px;
-    margin: 10px;
-    color: #93450B;
-    background-color: #000;
-    border-color: #93450B;
-    border-radius: 20px; }
-  .botones-carrito button:hover {
-    color: #000;
-    background-color: #93450B;
-    border-color: #000; }
+  justify-content: flex-end; }
+
+table {
+  border-color: #000; }
+
+.table-col {
+  font-size: 20px; }
+
+#item-nombre {
+  font-size: 20px; }
+
+#item-cantidad {
+  font-size: 20px; }
+
+#item-total {
+  font-size: 20px; }
+
+#carrito-vacio {
+  font-size: 20px; }
+
+.footer-col {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000; }
+
+#vaciar-carrito {
+  font-size: 18px;
+  background-color: #000;
+  color: #93450B;
+  border-radius: 20px;
+  padding: 15px;
+  border-color: #000; }
+
+#vaciar-carrito:hover {
+  background-color: #93450B;
+  color: #000;
+  border-color: #000; }
+
+.btn-mas-menos {
+  background-color: #000;
+  color: #93450B;
+  border-color: #93450B;
+  margin-right: 4px;
+  font-size: 20px;
+  border-radius: 30%;
+  padding: 8px; }
+
+.btn-mas-menos:hover {
+  background-color: #93450B;
+  color: #000;
+  border-color: #000; }
+
+#btn-comprar {
+  width: 100%;
+  margin: 0 5px 5px 5px;
+  font-size: 20px;
+  color: #93450B;
+  background-color: #000;
+  display: none; }
+
+#contadorCarrito {
+  position: absolute; }
+
+@media only screen and (max-width: 991px) {
+  .footer_logo {
+    display: none; }
+  .about > .about_img {
+    display: none; }
+  .about {
+    justify-content: center; } }
+
+@media only screen and (max-width: 500px) {
+  #carrito {
+    width: auto; }
+  .reservas > .reservas_form {
+    width: auto;
+    margin-bottom: 50px; }
+  .portada > .portada_titulo {
+    width: 250px; }
+    .portada > .portada_titulo p {
+      font-size: 20px; }
+    .portada > .portada_titulo h1 {
+      font-size: 50px; }
+  footer {
+    justify-content: space-between; } }
 
 * {
   margin: 0;

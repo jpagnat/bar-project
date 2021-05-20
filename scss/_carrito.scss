@@ -1,49 +1,87 @@
 #carrito {
-    width: 400px;
-    height: 100vh;
     background-color: #93450B;
     position: absolute;
     position: fixed;
     z-index: 100;
-    left: 940px;
-    display: none;
-    border-radius: 10px;
-    border: 2px solid #000;
-    h2 {
-        margin-top: 100px;
-        margin-left: 20px;
-        text-decoration:underline;
-    }
-    ul {
-        font-size: 30px;
-    }
-    p {
-        font-size: 30px;
-        margin-left: 30px;
-    }
+    width: 500px;
+    height: auto;
+    margin-top: 70px;
 }
 
-#lista-carrito {
-    margin-top: 100px;
-}
-
-
-.botones-carrito {
+.flex-carrito {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    button {
-        padding: 10px;
-        font-size: 20px;
-        margin: 10px;
-        color: #93450B;
-        background-color: #000;
-        border-color: #93450B;
-        border-radius: 20px;
-    }
-    button:hover {
-        color: #000;
-        background-color: #93450B;
-        border-color: #000;
-    }
+    justify-content: flex-end;
+}
+
+table {
+    border-color: #000;
+}
+
+.table-col {
+    font-size: 20px;
+}
+
+#item-nombre {
+    font-size: 20px;
+}
+
+#item-cantidad {
+    font-size: 20px;
+}
+
+#item-total {
+    font-size: 20px;
+}
+
+#carrito-vacio {
+    font-size: 20px;
+}
+
+.footer-col {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+#vaciar-carrito {
+    font-size: 18px;
+    background-color: #000;
+    color: #93450B;
+    border-radius: 20px;
+    padding: 15px;
+    border-color: #000;
+}
+#vaciar-carrito:hover {
+    background-color: #93450B;
+    color: #000;
+    border-color: #000;
+}
+
+.btn-mas-menos {
+    background-color: #000;
+    color: #93450B;
+    border-color: #93450B;
+    margin-right: 4px;
+    font-size: 20px;
+    border-radius: 30%;
+    padding: 8px;
+}
+.btn-mas-menos:hover {
+    background-color: #93450B;
+    color: #000;
+    border-color: #000;
+}
+
+#btn-comprar {
+    width: 100%;
+    margin: 0 5px 5px 5px;
+    font-size: 20px;
+    color: #93450B;
+    background-color: #000;
+    display: none;
+}
+
+
+#contadorCarrito {
+    position: absolute;
 }
